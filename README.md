@@ -1,51 +1,99 @@
-      🚀 TalentSphere
-    Job Hiring & Recruitment Platform
+# 🚀 TalentSphere
 
-TalentSphere is a modern job hiring and recruitment platform designed to connect students/job seekers and companies in one centralized ecosystem.
+###  Job Hiring & Recruitment Platform
 
-The platform simplifies the recruitment process by allowing students and applicants to discover opportunities, companies to manage job openings.
+TalentSphere is a modern **job hiring and recruitment platform** designed to connect **students/job seekers and companies** in one centralized ecosystem.
 
-🌐 Overview
+The platform simplifies the recruitment process by allowing students and applicants to discover opportunities, companies to manage job openings to coordinate placement activities.
 
-TalentSphere solves this problem by providing a unified platform where:
+---
 
-👨‍🎓 Students can discover and apply for jobs and internships.
-🏢 Companies can publish jobs and manage applications.
+## 🌐 Overview
 
-✨ Key Features
-👨‍🎓 Student Portal
-. Create and manage student profiles
-. Upload resume and personal information
-. Browse available jobs and internships
-. Apply for suitable opportunities
-. Track application status
-. View company and job details
-. Manage applied jobs
+**TalentSphere** solves this problem by providing a unified platform where:
 
-🏢 Company Portal
-. Create and manage company profiles
-. Post job openings
-. Define job requirements and skills
-. View received applications
-. Manage applicants
-. Shortlist candidates
-. Track recruitment activities
+* 👨‍🎓 **Students** can discover and apply for jobs and internships.
+* 🏢 **Companies** can publish jobs and manage applications.
+---
 
-🛠️ Tech Stack
-Frontend
-⚛️ React.js
-🎨 HTML5
-🎨 CSS3
-⚡ JavaScript
-🎯 Tailwind CSS
-🧭 React Router
-✨ Framer Motion
-Backend
-🟢 Node.js
-🚂 Express.js
-🔐 JWT Authentication
-🔗 REST APIs
-Database
-🍃 MongoDB
-🔌 Mongoose
-☁️ MongoDB Atlas
+## ✨ Key Features
+
+### 👨‍🎓 Student Portal
+
+* Create and manage student profiles
+* Upload resume and personal information
+* Browse available jobs and internships
+* Apply for suitable opportunities
+* Track application status
+* View company and job details
+* Manage applied jobs
+
+### 🏢 Company Portal
+
+* Create and manage company profiles
+* Post job openings
+* Define job requirements and skills
+* View received applications
+* Manage applicants
+* Shortlist candidates
+* Track recruitment activities
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* ⚛️ React.js
+* 🎨 HTML5
+* 🎨 CSS3
+* ⚡ JavaScript
+* 🎯 Tailwind CSS
+* 🧭 React Router
+* ✨ Framer Motion
+
+### Backend
+
+* 🟢 Node.js
+* 🚂 Express.js
+* 🔐 JWT Authentication
+* 🔗 REST APIs
+
+### Database
+
+* 🍃 MongoDB
+* 🔌 Mongoose
+* ☁️ MongoDB Atlas
+---
+
+## 🏗️ Project Architecture
+
+```text
+TalentSphere/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── assets/
+│   │   ├── services/
+│   │   ├── context/
+│   │   └── App.jsx
+│   │
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
+│
+├── .gitignore
+├── README.md
+└── package.json
+```
+---
