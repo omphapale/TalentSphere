@@ -1,5 +1,5 @@
-🚀 TalentSphere
-Job Hiring & Recruitment Platform
+      🚀 TalentSphere
+    Job Hiring & Recruitment Platform
 
 TalentSphere is a modern job hiring and recruitment platform designed to connect students/job seekers and companies in one centralized ecosystem.
 
