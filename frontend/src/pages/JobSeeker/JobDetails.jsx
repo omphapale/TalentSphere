@@ -21,7 +21,7 @@ const JobDetails = () => {
   const { user } = useAuth();
   const { jobId } = useParams();
 
-  const [JobDetails, setJobDetails] = useAuth(null);
+  const [jobDetails, setJobDetails] = useState(null);
 
   const getJobDetailsById =async () => {
     try {
@@ -64,15 +64,15 @@ const JobDetails = () => {
 
         <div className="container mx-auto pt-24">
           {/* Main content card */}
-          {JobDetails && (
+          {jobDetails && (
             <div className="bg-white p-6 rounded-lg">
               {/* hero section with clean background */}
               <div className="relative px-0 pb-8 border-b border-gray-100">
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
-                    {JobDetails?.company?.companyLogo ? (
+                    {jobDetails?.company?.companyLogo ? (
                       <img
-                      src={JobDetails?.company?.companyLogo}
+                      src={jobDetails?.company?.companyLogo}
                       alt="Company logo"
                       className="h-20 w-20 object-cover rounded-2xl border-4 border-white/20 shadow-lg"
                       />
@@ -84,14 +84,14 @@ const JobDetails = () => {
 
                     <div className="flex-1">
                       <h1 className="text-lg lg:text-xl font-semibold mb-2 leading-tight text-gray-900">
-                        {JobDetails.title}
+                        {jobDetails.title}
                       </h1>
 
                       <div className="flex items-center space-x-4 text-gray-600">
                         <div className="flex items-center space-x-4">
                           <MapPin className="h-4 w-4"/>
                           <span className="text-sm font-medium">
-                            {JobDetails.location}
+                            {jobDetails.location}
                           </span>
                         </div>
                       </div>
@@ -134,7 +134,7 @@ const JobDetails = () => {
               {/* Salary  */}
               <div className="relative overflow-hidden bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 p-6 rounded-2xl">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/10 to-teal-400/10 rounded-full -translate-y-16 translate-x-16"></div>
-                <div className="realtive z-10">
+                <div className="relative z-10">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
                       <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl">

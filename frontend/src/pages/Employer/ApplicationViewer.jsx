@@ -27,6 +27,10 @@ const ApplicationViewer =() => {
   const [selectedApplicant, setSelectedApplicant] = useState(null);
 
   const fetchApplications = async () => {
+     if (!jobId){
+    console.error("Job ID is missing");
+    return;
+      }
     try{
       setLoading(true);
       const response = await axiosInstance.get(
@@ -41,7 +45,9 @@ const ApplicationViewer =() => {
   };
 
   useEffect (() => {
+    if(jobId){
      fetchApplications();
+    }
   }, [jobId]);
 
   //group applications by job
