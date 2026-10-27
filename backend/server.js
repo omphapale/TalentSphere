@@ -12,7 +12,7 @@ const savedJob = require("./models/SavedJob");
 const savedJobsRoutes = require("./routes/savedJobsRoutes");
 const analyticsRoutes = require("./routes/analyticsRoutes");
 
-const app = express();
+const app = require("./app");
 
 //middleware to handle cors
 app.use(

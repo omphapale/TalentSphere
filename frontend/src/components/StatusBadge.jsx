@@ -8,7 +8,7 @@ const StatusBadge = ({status}) => {
       Rejected: "bg-red-100 text-red-800",
    }
 
-   return
+   return(
       <span
       className={`px-3 py-1 rounded text-sm font-medium ${
          statusConfig[status] || "bg-gray-100 text-gray-800"
@@ -16,6 +16,7 @@ const StatusBadge = ({status}) => {
       >
          {status}
       </span>
+   )
    
 }
 
