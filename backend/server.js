@@ -12,12 +12,12 @@ const savedJob = require("./models/SavedJob");
 const savedJobsRoutes = require("./routes/savedJobsRoutes");
 const analyticsRoutes = require("./routes/analyticsRoutes");
 
-const app = require("./app");
+const app = express();
 
 //middleware to handle cors
 app.use(
    cors({
-      origin: "*",
+      origin: ["https://talentsphere-delta.vercel.app"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type", "Authorization"],
    })
